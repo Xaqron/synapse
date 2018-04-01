@@ -204,7 +204,6 @@ server {
 شبیه به فایل زیر:
 </p>
 
-
 <code>
 ...
   root /var/www/html;
@@ -249,10 +248,8 @@ server {
 <code>$ sudo crontab -e</code>
 
 <code>
-35 2 * * 1 sudo cp /etc/letsencrypt/live/example.com/fullchain.pem /etc/matrix-synapse/fullchain.pem
-
-35 2 * * 1 sudo cp /etc/letsencrypt/live/example.com/privkey.pem /etc/matrix-synapse/privkey.pem
-
+35 2 * * 1 sudo cp /etc/letsencrypt/live/example.com/fullchain.pem /etc/matrix-synapse/fullchain.pem <br />
+35 2 * * 1 sudo cp /etc/letsencrypt/live/example.com/privkey.pem /etc/matrix-synapse/privkey.pem <br />
 36 2 * * 1 sudo systemctl restart matrix-synapse
 </code>
 
@@ -288,12 +285,9 @@ tls_dh_params_path: "/etc/ssl/certs/dhparam.pem" <br />
 </p>
 
 <code>
-$ sudo ufw allow 'Nginx Full'
-
-$ sudo ufw delete allow 'Nginx HTTP'
-
-$ sudo ufw allow 8448
-
+$ sudo ufw allow 'Nginx Full' <br />
+$ sudo ufw delete allow 'Nginx HTTP' <br />
+$ sudo ufw allow 8448 <br />
 $ sudo systemctl restart matrix-synapse
 </code>
 
@@ -325,5 +319,5 @@ $ sudo systemctl restart matrix-synapse
 
 <br />
 <h3 dir="rtl">
-<a href="https://riot.im/">* تماس با من</a>
+<a href="https://twitter.com/xaqron">* تماس با من</a>
 </h3>
