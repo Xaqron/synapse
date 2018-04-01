@@ -248,8 +248,10 @@ server {
 <code>$ sudo crontab -e</code>
 
 <code>
-35 2 * * 1 sudo cp /etc/letsencrypt/live/example.com/fullchain.pem /etc/matrix-synapse/fullchain.pem <br />
-35 2 * * 1 sudo cp /etc/letsencrypt/live/example.com/privkey.pem /etc/matrix-synapse/privkey.pem <br />
+35 2 * * 1 sudo cp /etc/letsencrypt/live/example.com/fullchain.pem /etc/matrix-synapse/fullchain.pem
+
+35 2 * * 1 sudo cp /etc/letsencrypt/live/example.com/privkey.pem /etc/matrix-synapse/privkey.pem
+
 36 2 * * 1 sudo systemctl restart matrix-synapse
 </code>
 
