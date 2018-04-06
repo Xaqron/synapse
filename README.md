@@ -319,6 +319,21 @@ $ sudo systemctl restart matrix-synapse
 برای اضافه کردن لیست سایر سرورهای مورد اعتماد خود در فایل homeserver.yaml به بخش trusted_third_party_id_servers مراجعه کنید.
 </p>
 
+<h2 dir="rtl">
+راه اندازی سرویس TURN/STUN
+</h2>
+
+<p dir="rtl">
+برای تماس صوتی / تصویری در صورتی که کلاینت پشت NAT‌ قرار داشته باشد به این سرویس نیاز خواهید داشت.
+در اینجا از <a href="https://github.com/coturn/coturn">COTURN</a> استفاده شده است. برای نصب آن دستور زیر را اجرا نمایید:
+</p>
+
+<code>$ bash <a href="https://github.com/Xaqron/synapse/blob/master/resources/install-coturn.sh">install-coturn.sh</a> yourdomain.com</code>
+
+<p dir="rtl">
+کلیه تنظیمات مربوط به COTURN و سیناپس به صورت خودکار انجام خواهند شد.
+</p>
+
 <br />
 <h3 dir="rtl">
 <a href="https://twitter.com/xaqron">* تماس با من</a>
